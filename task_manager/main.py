@@ -1,14 +1,14 @@
-from funkce import seznam_ukolu, menu_content, validacia_vstupu
+from funkce import seznam_ukolu, obsah_menu, validacia_vstupu
 ukoly = []
 
 # Zobrazeie hlavného menu
 def hlavni_menu() -> None:
-    print(menu_content())
+    print(obsah_menu())
 
 # Zobrazenie zoznamu úloh
 def zobrazit_ukoly(data: list[dict[str, str]]) -> None:
     print(seznam_ukolu(data))
-    print()
+    print() #Vytvorí nový riadok kvoli čiateľnosti v kóde
 
 # Pridanie novej úlohy do zoznamu
 def pridat_ukol() -> None:
@@ -27,7 +27,7 @@ def pridat_ukol() -> None:
             "popis": popis.strip()
         })
 
-        print(f"\nÚkol '{nazev.strip()}' byl přidán. \n")
+        print(f"Úkol '{nazev.strip()}' byl přidán. \n")
         break
 
 

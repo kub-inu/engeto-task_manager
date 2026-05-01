@@ -1,4 +1,4 @@
-def menu_content() -> str:
+def obsah_menu() -> str:
     return (
         "Správce úkolů - Hlavní menu\n"
         "1. Přidat nový úkol\n"
