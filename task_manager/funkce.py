@@ -43,7 +43,7 @@ def validacia_vstupu(hodnota: str, pole: str) -> bool:
         pole: název kontrolovaného pole
 
     Returns:
-        True, pokud je hodnota prázdna, jinak False
+        True, pokud je hodnota prázdna, jinak False 
     """
 
     if hodnota.strip():
