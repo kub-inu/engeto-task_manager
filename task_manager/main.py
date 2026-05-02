@@ -11,7 +11,7 @@ def zobrazit_ukoly(ukoly: list[dict[str, str]]) -> None:
     Vypíše do konzole seznam všech uložených úkolů.
 
     Args:
-        ukoly: seznam obsahujíci slovníky úkolů - {"název": str, "popis": str}
+        ukoly: seznam obsahujíci slovníky úkolů {"název": str, "popis": str}
     """
     print(seznam_ukolu(ukoly))
     print() #Vytvorí nový riadok kvoli čiateľnosti v kóde
