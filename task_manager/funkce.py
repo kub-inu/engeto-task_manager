@@ -22,14 +22,32 @@ def seznam_ukolu(data: list[dict[str, str]]) -> str:
     return "\n".join(seznam)
 
 
-def validacia_vstupu(nazev: str, popis: str) -> str | None:
-    nazev_ukolu, popis_ukolu = nazev.strip(), popis.strip()
+# def validacia_vstupu(nazev: str, popis: str) -> str | None:
+#     nazev_ukolu, popis_ukolu = nazev.strip(), popis.strip()
 
-    if not nazev_ukolu and not popis_ukolu:
-        return 'Nezadal jste název ani popis úkolu.'
-    if not nazev_ukolu:
-        return 'Nezadal jste název úkolu.'
-    if not popis_ukolu:
-        return 'Nezadal jste popis úkolu.'
+#     if not nazev_ukolu and not popis_ukolu:
+#         return 'Nezadal jste název ani popis úkolu.'
+#     if not nazev_ukolu:
+#         return 'Nezadal jste název úkolu.'
+#     if not popis_ukolu:
+#         return 'Nezadal jste popis úkolu.'
     
-    return None
+#     return None
+
+def validacia_vstupu(hodnota: str, pole: str) -> bool:
+    """
+    Validuje zadanou hodnotu uživatele - ověří zda je prázdna.
+
+    Args:
+        hodnota: hodnota zadaná uživatelem
+        pole: název kontrolovaného pole
+
+    Returns:
+        True, pokud je hodnota prázdna, jinak False
+    """
+
+    if hodnota.strip():
+        return False
+
+    print(f'> Nezadal jste {pole} úkolu. ')
+    return True
