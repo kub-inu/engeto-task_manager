@@ -4,7 +4,7 @@ Prvý projekt pre certifikáciu Testing Academy od Engeta.
 
 Jednoduchá CLI aplikácia napísaná v Pythone pre správu úloh spolu s vytvorenými testovacími prípadmi pre manuálne testovanie.
 
-## 📌 Popis projektu
+## Popis projektu
 
 Projekt pozostáva z dvoch častí:
 1. Implementácia CLI aplikácie **Task Manager**
@@ -17,8 +17,7 @@ Aplikácia umožňuje:
 
 Testovanie pokrýva hlavné funkcionality vrátane validácie vstupov a hraničných prípadov.
 
-
-### ⚙️ Funkcionalita aplikácie
+### Funkcionalita aplikácie
 
 - `hlavni_menu()` – navigácia v aplikácii
 - `pridat_ukol()` – pridanie novej úlohy
@@ -27,8 +26,7 @@ Testovanie pokrýva hlavné funkcionality vrátane validácie vstupov a hraničn
 
 ---
 
-## 🧪 Testovanie
-
+## Testovanie
 Testovanie bolo vykonané manuálne pomocou definovaných testovacích prípadov.
 
 ### Pokrytie:
@@ -46,16 +44,23 @@ Testovanie bolo vykonané manuálne pomocou definovaných testovacích prípadov
 - Všetky testy **prešli**
 - Neboli identifikované žiadne defekty v rámci scope zadania
 
-📄 Dokumentácia s vytvorenými testovacími prípadmi:
-- `\task_manager_tc.pdf` ([Google Drive](https://docs.google.com/document/d/1xRp1iqtB5Z8bxbM4HAYWtApahmfkme07WkqjXBaLXpY/edit?usp=sharing))
-
-
 ### Mimo rozsah (Out of scope)
 
 - perzistencia dát (uloženie do súboru / DB)
 - editácia úloh (CRUD nie je kompletný)
 - výkon a bezpečnosť
 - pokročilá validácia (napr. dĺžka vstupu)
+
+---
+
+### Dokumentácia s vytvorenými testovacími prípadmi:
+##### v0.2 [Aktuálna]
+- [Task_Manager_TC_SK_v0.2](https://docs.google.com/document/d/1Pv5U1ykjbDslHGMPoWtJqtv8QFfUzoIZUpQS9F_NGPg/edit?usp=sharing) (Google Docs)
+- Task_Manager_TC_CZ_v0.2 (*ve zpracování*)
+
+##### v0.1:
+- [Task_Manager_TC_SK_v0.1](https://docs.google.com/document/d/1xRp1iqtB5Z8bxbM4HAYWtApahmfkme07WkqjXBaLXpY/edit?usp=sharing) (Google Docs)
+
 
 ---
 
