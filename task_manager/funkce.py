@@ -1,4 +1,5 @@
 def obsah_menu() -> str:
+    """Vrátí text hlavního menu."""
     return (
         "Správce úkolů - Hlavní menu\n"
         "1. Přidat nový úkol\n"
@@ -8,31 +9,37 @@ def obsah_menu() -> str:
     )
 
 def ukol_format(index: int, data: dict[str, str]) -> str:
+    """
+    Naformátuje jednu položku seznamu úkolů pro výpis do konzole.
+
+    Args:
+        index: pořadové číslo úkolu
+        data: slovník úkolu ve formátu {"nazev": str, "popis": str}
+
+    Returns:
+        str: Naformátovaná položka ve tvaru "<index>. <nazev> - <popis>".
+    """
     return f"{index}. {data['nazev']} - {data['popis']}"
 
-def seznam_ukolu(data: list[dict[str, str]]) -> str:
-    if not data:
+def seznam_ukolu(seznam: list[dict[str, str]]) -> str:
+    """
+    Vrátí naformátovaný seznam úkolů.
+
+    Args:
+        seznam: seznam úkolů ve formátu {"nazev": str, "popis": str}
+
+    Returns:
+        str: Naformátovaný seznam úkolů nebo hláška o prázdném seznamu.
+    """
+    if not seznam:
         return "\nNení nic k zobrazení."
     
-    seznam = ["\nSeznam úkolů:"]
+    vystup = ["\nSeznam úkolů:"]
     
-    for i, ukol in enumerate(data, start=1):
-        seznam.append(ukol_format(i, ukol))
+    for i, ukol in enumerate(seznam, start=1):
+        vystup.append(ukol_format(i, ukol))
     
-    return "\n".join(seznam)
-
-
-# def validacia_vstupu(nazev: str, popis: str) -> str | None:
-#     nazev_ukolu, popis_ukolu = nazev.strip(), popis.strip()
-
-#     if not nazev_ukolu and not popis_ukolu:
-#         return 'Nezadal jste název ani popis úkolu.'
-#     if not nazev_ukolu:
-#         return 'Nezadal jste název úkolu.'
-#     if not popis_ukolu:
-#         return 'Nezadal jste popis úkolu.'
-    
-#     return None
+    return "\n".join(vystup)
 
 def validacia_vstupu(hodnota: str, pole: str) -> bool:
     """
@@ -43,11 +50,10 @@ def validacia_vstupu(hodnota: str, pole: str) -> bool:
         pole: název kontrolovaného pole
 
     Returns:
-        True, pokud je hodnota prázdna, jinak False 
+        bool: True, pokud je hodnota prázdna, jinak False 
     """
-
     if hodnota.strip():
         return False
 
-    print(f'> Nezadal jste {pole} úkolu. ')
+    print(f'> Nezadal jste {pole} úkolu.\n')
     return True
