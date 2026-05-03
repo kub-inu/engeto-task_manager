@@ -50,10 +50,10 @@ def validacia_vstupu(hodnota: str, pole: str) -> bool:
         pole: název kontrolovaného pole
 
     Returns:
-        bool: True, pokud je hodnota prázdna, jinak False 
+        bool: False, pokud je hodnota prázdna, jinak True 
     """
-    if hodnota.strip():
+    if not hodnota.strip():
+        print(f'> Nezadal jste {pole} úkolu.\n')
         return False
-
-    print(f'> Nezadal jste {pole} úkolu.\n')
+    
     return True

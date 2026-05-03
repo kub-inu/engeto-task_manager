@@ -25,13 +25,13 @@ def pridat_ukol(ukoly: list[dict[str, str]]) -> None:
     print() # Vytvoří prázdný řádek kvůli čitelnosti výstupu.
     while True:
         nazev = input("Zadejte název úkolu: ")
-        if validacia_vstupu(nazev, "název"):
+        if not validacia_vstupu(nazev, "název"):
             continue
         break
 
     while True:
         popis = input("Zadejte popis úkolu: ")
-        if validacia_vstupu(popis, "popis"):
+        if not validacia_vstupu(popis, "popis"):
             continue
         break
 
