@@ -54,8 +54,8 @@ def odstranit_ukol(ukoly: list[dict[str, str]]) -> None:
         zobrazit_ukoly(ukoly)
         return
     
+    zobrazit_ukoly(ukoly)
     while True:
-        zobrazit_ukoly(ukoly)
         try:
             index = int(input("Zadejte číslo úkolu, který chcete odstranit: ")) - 1
             if index < 0:
