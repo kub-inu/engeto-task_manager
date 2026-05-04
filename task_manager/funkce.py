@@ -41,7 +41,7 @@ def seznam_ukolu(seznam: list[dict[str, str]]) -> str:
     
     return "\n".join(vystup)
 
-def validacia_vstupu(hodnota: str, pole: str) -> bool:
+def validace_vstupu(hodnota: str, pole: str) -> bool:
     """
     Validuje zadanou hodnotu uživatele - ověří zda je prázdna.
 

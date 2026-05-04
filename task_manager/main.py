@@ -1,4 +1,4 @@
-from funkce import seznam_ukolu, obsah_menu, validacia_vstupu
+from funkce import seznam_ukolu, obsah_menu, validace_vstupu
 
 def hlavni_menu() -> None:
     """Vypíše hlavní menu programu do konzole."""
@@ -25,13 +25,13 @@ def pridat_ukol(ukoly: list[dict[str, str]]) -> None:
     print() # Vytvoří prázdný řádek kvůli čitelnosti výstupu.
     while True:
         nazev = input("Zadejte název úkolu: ")
-        if not validacia_vstupu(nazev, "název"):
+        if not validace_vstupu(nazev, "název"):
             continue
         break
 
     while True:
         popis = input("Zadejte popis úkolu: ")
-        if not validacia_vstupu(popis, "popis"):
+        if not validace_vstupu(popis, "popis"):
             continue
         break
 
