@@ -56,7 +56,7 @@ Testovanie bolo vykonané manuálne pomocou definovaných testovacích prípadov
 ### Dokumentácia s vytvorenými testovacími prípadmi:
 ##### v0.2 [Aktuálna]
 - [Task_Manager_TC_SK_v0.2](https://docs.google.com/document/d/1Pv5U1ykjbDslHGMPoWtJqtv8QFfUzoIZUpQS9F_NGPg/edit?usp=sharing) (Google Docs)
-- Task_Manager_TC_CZ_v0.2 (*ve zpracování*)
+- [Task_Manager_TC_CZ_v0.2](https://docs.google.com/document/d/1vcdw8emFGb5UFqsxaK8ANfsZS-8qoDT_kvjrzrLqSFI/edit?usp=sharing) (Google Docs)
 
 ##### v0.1:
 - [Task_Manager_TC_SK_v0.1](https://docs.google.com/document/d/1xRp1iqtB5Z8bxbM4HAYWtApahmfkme07WkqjXBaLXpY/edit?usp=sharing) (Google Docs)

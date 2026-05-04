@@ -90,7 +90,7 @@ def spustit_aplikaci() -> None:
                 print("\nKonec programu.\n")
                 break
             case _:
-                print("\nZadejte platnou volbu z menu programu.\n")
+                print("\nZadejte platnou volbu z menu.\n")
 
 if __name__ == "__main__":
     spustit_aplikaci()
