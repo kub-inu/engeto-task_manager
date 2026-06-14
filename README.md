@@ -42,7 +42,7 @@ py main.py
 ```bash
 python main.py
 ```
-#### Linus / macOS
+#### Linux / macOS
 ```bash
 python3 main.py
 ```
